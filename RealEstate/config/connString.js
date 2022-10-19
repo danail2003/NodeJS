@@ -1,0 +1,1 @@
+exports.CONN_STRING = 'mongodb+srv://danail2003:mercedes2003@cluster0.gk9ua6h.mongodb.net/realEstate?retryWrites=true&w=majority';
