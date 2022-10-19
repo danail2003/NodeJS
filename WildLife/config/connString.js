@@ -1,0 +1,1 @@
+exports.CONN_STRING = 'mongodb://localhost:27017/wildlife';
