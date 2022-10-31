@@ -1,0 +1,30 @@
+<section id="all-blogs-page">
+    <article class="all-blogs-title">
+        <h1>All Blogs</h1>
+    </article>
+    {{#each blogs}}
+    <!--If there are blogs in the database, show each one-->
+    <article class="all-blogs-card">
+        <article class="all-blogs-card-image">
+            <!-- Do not forget to change the path to the image -->
+            <img src="{{image}}" alt="{{title}}">
+        </article>
+
+        <article class="all-blogs-card-content">
+            <!--You must put the headline value in <h2>-->
+            <h2>{{title}}</h2>
+            <!--You must put the headline value in <h3>-->
+            <h3>{{blogCategory}}</h3>
+        </article>
+
+        <article class="all-blogs-card-buttons">
+            <a href="/blogs/details/{{_id}}" class="btn-details">Details</a>
+        </article>
+    </article>
+    {{else}}
+    <!--If there are still no blogs in the database display:-->
+    <article class="not-available-blogs">
+        <h1>No blogs created yet.</h1>
+    </article>
+    {{/each}}
+</section>
